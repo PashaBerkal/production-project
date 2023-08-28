@@ -11,7 +11,7 @@ import { classNames } from './helpers/classNames/classNames';
 const App = () => {
     const {theme, toggleTheme} = useTheme();
     return (
-        <div className={classNames('app', {hovered: true, selected: false}, [theme])}>
+        <div className={classNames('app', {}, [theme])}>
             <button onClick={toggleTheme}>TOGGLE</button>
             <Link to={'/'}>Главная</Link>
             <Link to={'/about'}>О сайте</Link>
